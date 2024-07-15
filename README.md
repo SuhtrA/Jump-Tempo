@@ -4,15 +4,16 @@ Automatic tap-tempo MIDI pedal to sync a pedalboard with MIDI clock
 
 ### GOALS : 
 
-• Using tap tempo normally (the screen analyse the tempo and annouce it)
 
-• Using tempo selector with Rotary Encoder with two mods : 
-    - selecting tempo and triggers it when hitting the pedal switch
-    - selecting the tempo and sending it real time
-    This mod should send the tempo thanks to a MIDI out output
+Using tempo selector with Rotary Encoder with two mods : 
 
-• Receiving tempo from MIDI interface thrue MIDI in input
+• Selecting tempo and triggers it when hitting the pedal switch
 
+• Selecting the tempo and sending it real time
+
+• Receiving tempo from MIDI interface thru MIDI in input
+
+A switch at the back of the pedal allows the pedal to be used when power is off.
 ### Hardware : 
 Arduino Leonardo
 
