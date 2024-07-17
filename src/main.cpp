@@ -13,21 +13,23 @@
 #define MIDIinPin 0
 #define MIDIoutPin 1
 
-#define screenSDA A4 //OLED i2C SDA Pin
-#define screenSCL A5 //OLED i2C SCL 
+#define screenSDA 2 //OLED i2C SDA Pin
+#define screenSCL 3 //OLED i2C SCL 
 
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 32 // OLED display height, in pixels
 
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
-#define pinAKY  2  //CLK Output A of the encoder
-#define pinBKY  3 //DT Output B of the encoder
-ezButton button1(4); // switch of the encoder
+#define pinAKY  15  //CLK Output A of the encoder
+#define pinBKY  14 //DT Output B of the encoder
+ezButton button1(16); // switch of the encoder
 
-#define tapPin 5
+#define tapPin 4
 
-#define optoPin 6
+#define optoPin 7
+
+#define BIG_LED 
 
 RotaryEncoder encoder(pinAKY, pinBKY, RotaryEncoder::LatchMode::FOUR3); 
 
